@@ -80,8 +80,7 @@ $ defaults write org.xquartz.X11 nolisten_tcp -boolean false
 > [!IMPORTANT]
 > Make sure that the Docker Engine is running before issuing `docker` command.
 
-1. Extract `seismology-docker.zip`.
-2. Run PowerShell.
+1. Run PowerShell.
 
 ```shell
 # Clone this repository
