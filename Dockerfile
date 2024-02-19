@@ -14,37 +14,37 @@ ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 RUN echo "deb http://archive.debian.org/debian stretch main" >> /etc/apt/sources.list
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q \
-    dbus \
-    pkg-config \
-    libxcb*-dev \
-    libgl1-mesa-dev \
-    libgl1-mesa-glx \
-    libxkbcommon-x11-dev \
-    libgtk2.0-dev \
-    libgtk-3-dev \
+    apt-transport-https \
     build-essential \
     ccache \
-    cmake \
-    gnupg \
-    gcc-6-base \
-    libgfortran3 \
-    software-properties-common \
-    apt-transport-https \
-    curl \
-    git \
-    geany \
-    unzip \
-    wget \
-    zip \
-    vim \
-    libx11-dev \
-    python3-tk \
     clang-15 \
+    cmake \
+    curl \
+    dbus \
     fort77 \
-    libkrb5-dev \
+    gcc-6-base \
+    geany \
+    git \
+    gnupg \
     krb5-user \
+    libgfortran3 \
+    libgl1-mesa-dev \
+    libgl1-mesa-glx \
+    libgtk-3-dev \
+    libgtk2.0-dev \
+    libkrb5-dev \
     liblcms2-2 \
     liblcms2-dev \
+    libx11-dev \
+    libxcb*-dev \
+    libxkbcommon-x11-dev \
+    pkg-config \
+    python3-tk \
+    software-properties-common \
+    unzip \
+    vim \
+    wget \
+    zip \
  && rm -r /var/lib/apt/lists/*
 
 WORKDIR /work
