@@ -36,6 +36,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q \
     unzip \
     wget \
     zip \
+    vim \
     libx11-dev \
     python3-tk \
     clang-15 \
