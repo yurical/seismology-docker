@@ -11,6 +11,7 @@ ENV LIBGL_ALWAYS_INDIRECT=1
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
+RUN echo "deb http://archive.debian.org/debian stretch main" >> /etc/apt/sources.list
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q \
     dbus \
@@ -25,6 +26,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q \
     ccache \
     cmake \
     gnupg \
+    gcc-6-base \
+    libgfortran3 \
     software-properties-common \
     apt-transport-https \
     curl \
