@@ -240,6 +240,10 @@ $ newgrp docker
 $ sudo systemctl restart docker
 ```
 
+### E: Failed to fetch http://deb.debian.org/debian/pool/main/*.deb  Cannot initiate the connection to deb.debian.org:80. - connect (101: Network is unreachable)
+
+Try the build command again.
+
 ## TODO
 
 * Add further instructions for macOS
