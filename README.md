@@ -87,16 +87,10 @@ $ defaults write org.xquartz.X11 nolisten_tcp -boolean false
 1. Run PowerShell.
 
 ```shell
-# Clone this repository
-# or you can just download code archive from https://github.com/yurical/seismology-docker/archive/refs/heads/main.zip and extract it.
-PS > git clone https://github.com/yurical/seismology-docker.git
-
-Cloning into 'seismology-docker'...
-remote: Enumerating objects: 8, done.
-remote: Counting objects: 100% (8/8), done.
-remote: Compressing objects: 100% (7/7), done.
-remote: Total 8 (delta 0), reused 8 (delta 0), pack-reused 0
-Receiving objects: 100% (8/8), 4.42 KiB | 4.42 MiB/s, done.
+# Download this repository
+PS > iwr 'https://github.com/yurical/seismology-docker/archive/refs/heads/main.zip' -OutFile '.\seismology-docker.zip'
+PS > Expand-Archive '.\seismology-docker.zip' .
+PS > cd seismology-docker-main
 
 # Go to the directory where you cloned repository or extracted `seismology-docker.zip`.
 PS > cd seismology-docker
