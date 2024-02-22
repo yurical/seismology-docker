@@ -6,7 +6,7 @@ Seismology-Docker is a docker image with seismology-related packages installed.
 
 * Docker with BuildKit
 * X Server (for GUI support on Windows and macOS)
-    * For Windows, `VcXsrv`.
+    * For Windows, `VcXsrv` or `MobaXterm`.
     * For Linux, it is installed by default on most of Linux distributions.
     * For macOS, `XQuartz`.
 * xhost
@@ -15,11 +15,15 @@ Seismology-Docker is a docker image with seismology-related packages installed.
     * For Debian-based distros, `x11-server-utils`.
     * For macOS, it is part of `XQuartz`.
 
-## Requirements installation
+## Requirements installation guide
 
 ### Windows
 
 #### Install VcXsrv (X Server)
+
+> [!NOTE]
+> If you have MobaXterm installed, you don't need to install VcXsrv.
+
 1. Download and install latest version of [VcXsrv](https://sourceforge.net/projects/vcxsrv/files/latest/download).
 2. Make sure that `Full` dropdown selected and click `Next`.
 3. Leave the Destination Folder untouched and click `Install`.
@@ -84,6 +88,7 @@ $ defaults write org.xquartz.X11 nolisten_tcp -boolean false
 
 ```shell
 # Clone this repository
+# or you can just download code archive from https://github.com/yurical/seismology-docker/archive/refs/heads/main.zip and extract it.
 PS > git clone https://github.com/yurical/seismology-docker.git
 
 Cloning into 'seismology-docker'...
@@ -93,7 +98,7 @@ remote: Compressing objects: 100% (7/7), done.
 remote: Total 8 (delta 0), reused 8 (delta 0), pack-reused 0
 Receiving objects: 100% (8/8), 4.42 KiB | 4.42 MiB/s, done.
 
-# Go to the directory where you extracted `seismology-docker.zip`
+# Go to the directory where you cloned repository or extracted `seismology-docker.zip`.
 PS > cd seismology-docker
 
 # Make sure that `Dockerfile` exists in the current directory
@@ -136,6 +141,7 @@ seismology   latest   ...        ...       <about a few GB>
 
 ```shell
 # Clone this repository
+# or you can just download code archive from https://github.com/yurical/seismology-docker/archive/refs/heads/main.zip and extract it.
 $ git clone https://github.com/yurical/seismology-docker.git
 
 Cloning into 'seismology-docker'...
