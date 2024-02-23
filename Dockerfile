@@ -51,3 +51,7 @@ WORKDIR /work
 ENV PATH "/root/.local/bin:${PATH}"
 COPY requirements.txt .
 RUN pip install --user -r requirements.txt && rm requirements.txt
+
+# Copy input.tar.gz if exists
+COPY input.tar.g[z] .
+RUN if [ -f "./input.tar.gz" ]; then tar -xzvf "./input.tar.gz" && rm -f "./input.tar.gz"; fi
