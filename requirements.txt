@@ -22,7 +22,7 @@ numexpr==2.9.0
 numpy==1.26.4
 packaging==23.2
 pandas==2.2.0
-pillow==10.2.0
+pillow==10.3.0
 platformdirs==4.2.0
 ply==3.11
 pooch==1.8.0
