@@ -10,7 +10,7 @@ contourpy==1.2.0
 cryptography==42.0.4
 cycler==0.12.1
 fonttools==4.48.1
-idna==3.6
+idna==3.7
 intel-openmp==2024.0.2
 Jinja2==3.1.4
 kiwisolver==1.4.5
