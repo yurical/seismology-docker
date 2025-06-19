@@ -47,5 +47,5 @@ tbb==2021.11.0
 toml==0.10.2
 tornado==6.4.2
 tzdata==2023.4
-urllib3==2.2.2
+urllib3==2.5.0
 vtk==9.3.0
