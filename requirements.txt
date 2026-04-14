@@ -27,7 +27,7 @@ platformdirs==4.2.0
 ply==3.11
 pooch==1.8.0
 pycparser==2.21
-pyOpenSSL==24.0.0
+pyOpenSSL==26.0.0
 pyparsing==3.1.1
 pyproj==3.6.1
 PyQt5==5.15.10 --only-binary=:all:
